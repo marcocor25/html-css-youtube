@@ -18,7 +18,6 @@
 /* VIEVPORT 1024PX */
 
 @media screen and (max-width: 1024px) {
-
   .play-list {
     flex-wrap: wrap;
     gap: 20px 0;
@@ -30,6 +29,19 @@
 
   .side-bar {
     width: 80px;
+  }
+
+  .menu-item.none {
+    display: none;
+  }
+
+  .widget {
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  .widget:nth-child(3) {
+    display: none;
   }
 
   .menu-item {
@@ -44,7 +56,7 @@
     padding: 5px 0;
   }
 
-  .widget:last-of-type {
-    visibility: hidden;
+  .categories li:nth-child(6) {
+    display: none;
   }
 }

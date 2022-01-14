@@ -127,6 +127,12 @@ img {
   background: #373737;
 }
 
+.categories li:nth-child(7) {
+  visibility: hidden;
+  background: none;
+  border: none;
+}
+
 .play-list-wrapper {
   padding: 20px 30px;
 }
