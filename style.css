@@ -1,0 +1,172 @@
+/* RESET CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* PRESET VARI */
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #202020;
+}
+
+header {
+  height: 20px;
+  padding: 30px;
+  border: 2px dashed red;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  border: 2px dashed yellowgreen;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.side-bar {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.widget {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #383838;
+}
+
+.menu-item {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:hover, .menu-item.active {
+  background: #383838;
+}
+
+.menu-item .icon {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+  text-align: center;
+}
+
+.icon i {
+  display: block;
+}
+
+.widget__title {
+  padding-left: 13px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.menu-item .profile-image {
+  width: 24px;
+  display: block;
+  border-radius: 50%;
+}
+
+.main-container {
+  flex-grow: 1;
+  background: #181818;
+}
+
+.categories {
+  padding: 15px 30px;
+  display: flex;
+  gap: 15px;
+  background: #202020;
+}
+
+.categories li {
+  padding: 0 15px;
+  line-height: 30px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border: 1px solid #4B4B4B;
+  background: #373737;
+}
+
+.play-list-wrapper {
+  padding: 20px 30px;
+}
+
+.play-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  border: 5px dashed deeppink;
+}
+
+.play-list-item {
+  width: 24%;
+}
+
+.badge-ad {
+  padding: 3px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  background: #FBBF2D;
+  color: #030303;
+}
+
+.flex-h3 {
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ad-info {
+  padding-bottom: 6px;
+}
+
+.card-header {
+  margin-bottom: 10px;
+}
+
+.card-header img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.play-list-item .card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.card-body img {
+  width: 30px;
+  border-radius: 50%;
+}
