@@ -1,4 +1,4 @@
-/* TEST VIEVPORT 1200PX */
+/* VIEVPORT 1200PX */
 
 @media screen and (max-width: 1200px) {
     .ad {
@@ -14,3 +14,37 @@
       width: 32%;
     }
   }
+
+/* VIEVPORT 1024PX */
+
+@media screen and (max-width: 1024px) {
+
+  .play-list {
+    flex-wrap: wrap;
+    gap: 20px 0;
+  }
+
+  .play-list-item {
+    width: 49%;
+  }
+
+  .side-bar {
+    width: 80px;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-item .icon {
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  .widget:last-of-type {
+    visibility: hidden;
+  }
+}
