@@ -129,8 +129,14 @@ img {
 
 .categories li:nth-child(7) {
   visibility: hidden;
-  background: none;
   border: none;
+  background: none;
+  transition: 200Ms linear;
+  color: #a0a0a0;
+}
+
+.categories li:nth-child(7):hover {
+  color: #FFFFFF;
 }
 
 .play-list-wrapper {
@@ -142,7 +148,6 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px 0;
-  border: 3px dashed deeppink;
 }
 
 .play-list-item {
