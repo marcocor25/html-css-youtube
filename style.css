@@ -1,3 +1,9 @@
+/* SCROLL-BAR STYLE */
+
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-thumb {visibility: hidden; border-radius: 5px; background: #717171; }
+.side-bar:hover::-webkit-scrollbar-thumb {visibility: visible;}
+
 /* RESET CSS */
 
 * {
@@ -25,13 +31,20 @@ body {
 }
 
 header {
-  height: 20px;
-  padding: 30px;
+  min-height: 50px;
+  display: flex;
+  border: 2px dashed deeppink;
 }
 
 main {
   display: flex;
   flex-grow: 1;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -43,16 +56,34 @@ img {
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
+/* HEADER */
 
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px dashed yellow;
+}
 
+.burger {
+  padding: 20px;
+  font-size: 15px;
+  color: #C7C7C7;
+}
 
+.header-logo {
+  width: 90px;
+  display: flex;
+  justify-content: flex-end;
+}
 
+.logolang {
+  padding-top: 9px;
+  font-size: 10px;
+  color: #9A9A9A;
+}
 
-/* SPAZIO PER HEADER */
-
-
-
-
+/* to be continued... */
 
 /* ---------------------------------------------------------------------------------------------------- */
 
@@ -60,7 +91,9 @@ img {
 
 .side-bar {
   width: 240px;
+  height: calc(100vh - 50px);
   flex-shrink: 0;
+  overflow: auto;
 }
 
 .widget {
@@ -92,9 +125,11 @@ img {
 }
 
 .widget__title {
+  margin: 5px 0;
   padding-left: 13px;
   text-transform: uppercase;
   font-size: 14px;
+  color: #AAAAAA;
 }
 
 .menu-item .profile-image {
@@ -132,7 +167,7 @@ img {
   border: none;
   background: none;
   transition: 200Ms linear;
-  color: #a0a0a0;
+  color: #AAAAAA;
 }
 
 .categories li:nth-child(7):hover {
