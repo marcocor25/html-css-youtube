@@ -91,12 +91,18 @@ img {
 }
 
 .search-bar__input {
+  width: 40vw;
   line-height: 35px;
   padding-left: 10px;
   border: 1px solid #303030;
   box-shadow: none;
+  font-size: 14px;
   color: #E2E2E2;
   background: #121212;
+}
+
+.search-bar__input:focus {
+  outline: none;
 }
 
 .search-button {
@@ -108,10 +114,32 @@ img {
 
 .search-button a {
   padding: 0 18px;
-  color: #7E7E7E;
+  color: #CCCCCC;
 }
 
+.vocal-search {
+  margin-left: 5px;
+  border-radius: 50%;
+  font-size: 16px;
+  background: #181818;
+}
+
+.vocal-search a {
+  width: 37px;
+  line-height: 37px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+
+
+
 /* to be continued... */
+
+
+
+
 
 /* ---------------------------------------------------------------------------------------------------- */
 
