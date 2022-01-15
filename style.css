@@ -33,6 +33,8 @@ body {
 header {
   min-height: 50px;
   display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
   border: 2px dashed deeppink;
 }
 
@@ -58,11 +60,10 @@ img {
 /* ---------------------------------------------------------------------------------------------------- */
 /* HEADER */
 
-.header-wrapper {
+.burger-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px dashed yellow;
 }
 
 .burger {
@@ -71,7 +72,7 @@ img {
   color: #C7C7C7;
 }
 
-.header-logo {
+.logo {
   width: 90px;
   display: flex;
   justify-content: flex-end;
@@ -81,6 +82,33 @@ img {
   padding-top: 9px;
   font-size: 10px;
   color: #9A9A9A;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px dashed yellow;
+}
+
+.search-bar__input {
+  line-height: 35px;
+  padding-left: 10px;
+  border: 1px solid #303030;
+  box-shadow: none;
+  color: #E2E2E2;
+  background: #121212;
+}
+
+.search-button {
+  line-height: 35px;
+  font-size: 16px;
+  border: 1px solid #303030;
+  background: #303030;
+}
+
+.search-button a {
+  padding: 0 18px;
+  color: #7E7E7E;
 }
 
 /* to be continued... */
