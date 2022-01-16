@@ -34,8 +34,7 @@ header {
   min-height: 50px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  border: 2px dashed deeppink;
+  justify-content: space-between;
 }
 
 main {
@@ -61,6 +60,7 @@ img {
 /* HEADER */
 
 .burger-logo {
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,7 @@ img {
 
 .burger {
   padding: 20px;
-  font-size: 15px;
+  font-size: 16px;
   color: #C7C7C7;
 }
 
@@ -85,9 +85,9 @@ img {
 }
 
 .search-bar {
+  padding: 0 20px;
   display: flex;
   align-items: center;
-  /* border: 2px dashed yellow; */
 }
 
 .search-bar__input {
@@ -127,7 +127,7 @@ img {
 .vocal-search {
   margin-left: 5px;
   border-radius: 50%;
-  font-size: 15px;
+  font-size: 16px;
   background: #181818;
 }
 
@@ -138,15 +138,29 @@ img {
   color: #FFFFFF;
 }
 
+.header-actions {
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+}
 
+.header-actions a {
+  color: #C7C7C7;
+}
 
+.smartphone-button {
+  display: none;
+}
 
-
-/* to be continued... */
-
-
-
-
+.avatar {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 /* ---------------------------------------------------------------------------------------------------- */
 
@@ -222,18 +236,25 @@ img {
   flex-shrink: 0;
   border-radius: 9999px;
   border: 1px solid #4B4B4B;
+  font-weight: bolder;
   background: #373737;
+  overflow: auto;
 }
 
-.categories li:nth-child(7) {
-  visibility: hidden;
+.categories li:nth-child(1) {
+  border: 1px solid #FFFFFF;
+  color: black;
+  background: #FFFFFF;
+}
+
+.categories li:nth-child(11) {
   border: none;
   background: none;
   transition: 200Ms linear;
   color: #AAAAAA;
 }
 
-.categories li:nth-child(7):hover {
+.categories li:nth-child(11):hover {
   color: #FFFFFF;
 }
 
@@ -293,7 +314,5 @@ img {
   width: 30px;
   border-radius: 50%;
 }
-
-/* ---------------------------------------------------------------------------------------------------- */
 
 /* FINE */
