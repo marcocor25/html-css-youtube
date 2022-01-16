@@ -240,14 +240,20 @@ img {
   border-radius: 9999px;
   border: 1px solid #4B4B4B;
   font-weight: bolder;
-  background: #373737;
-  overflow: auto;
+  overflow: hidden;
   transition: 200ms linear;
+  background: #373737;
 }
 
 .categories li:hover {
   background: #4D4D4D;
   cursor: pointer;
+}
+
+.categories li:nth-child(1) {
+  border: 1px solid #FFFFFF;
+  color: black;
+  background: #FFFFFF;
 }
 
 .categories li:nth-child(10) {
@@ -262,12 +268,6 @@ img {
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, transparent 50%, #202020);
-}
-
-.categories li:nth-child(1) {
-  border: 1px solid #FFFFFF;
-  color: black;
-  background: #FFFFFF;
 }
 
 .categories li:nth-child(11) {
@@ -296,6 +296,10 @@ img {
   width: 24%;
 }
 
+.play-list-item:hover {
+  cursor: pointer;
+}
+
 .badge-ad {
   padding: 3px;
   margin-right: 5px;
@@ -318,6 +322,26 @@ img {
 
 .card-header {
   margin-bottom: 10px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  visibility: hidden;
+  background: black;
+}
+
+.card-header:hover .overlay {
+  visibility: visible;
 }
 
 .card-header img {
