@@ -173,12 +173,17 @@ img {
   height: calc(100vh - 50px);
   flex-shrink: 0;
   overflow: auto;
+  font-weight: 200;
 }
 
 .widget {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #383838;
+}
+
+.widget:nth-child(5) {
+  margin-bottom: 10px;
 }
 
 .menu-item {
