@@ -238,7 +238,6 @@ img {
   white-space: nowrap;
   flex-shrink: 0;
   border-radius: 9999px;
-  border: 1px solid #4B4B4B;
   font-weight: bolder;
   overflow: hidden;
   transition: 200ms linear;
@@ -251,7 +250,6 @@ img {
 }
 
 .categories li:nth-child(1) {
-  border: 1px solid #FFFFFF;
   color: black;
   background: #FFFFFF;
 }
@@ -267,7 +265,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, transparent 50%, #202020);
+  background: linear-gradient(to right, transparent, #202020);
 }
 
 .categories li:nth-child(11) {
@@ -300,29 +298,19 @@ img {
   cursor: pointer;
 }
 
-.badge-ad {
-  padding: 3px;
-  margin-right: 5px;
-  border-radius: 5px;
-  font-weight: 500;
-  background: #FBBF2D;
-  color: #030303;
-}
-
-.flex-h3 {
-  padding-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.ad-info {
-  padding-bottom: 6px;
-}
-
 .card-header {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   position: relative;
+}
+
+.minute {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  padding: 2px 3px;
+  border-radius: 2px;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .overlay {
@@ -330,18 +318,19 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  opacity: 0.5;
+  height: calc(100% - 3px);
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
   font-weight: bolder;
-  visibility: hidden;
+  transition: 100ms linear;
   background: black;
 }
 
 .card-header:hover .overlay {
-  visibility: visible;
+  opacity: 0.5;
 }
 
 .card-header img {
@@ -360,6 +349,39 @@ img {
 .card-body img {
   width: 30px;
   border-radius: 50%;
+}
+
+.flex-h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-h3 i {
+  padding-top: 1px;
+}
+
+.ad-info {
+  padding-top: 5px;
+}
+
+.badge-ad {
+  padding: 1px 3px;
+  margin-right: 5px;
+  border-radius: 2px;
+  font-weight: 500;
+  background: #FBBF2D;
+  color: #030303;
+}
+
+.info h3 {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.info p {
+  line-height: 15px;
+  font-size: 11px;
+  color: #AAAAAA;
 }
 
 /* FINE */
